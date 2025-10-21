@@ -729,3 +729,48 @@ html, body {
     transform: translateX(3px);
 }
 
+/* Адаптив */
+@media (max-width: 1024px) {
+    .main-container {
+        padding: 0 30px;
+    }
+    
+    .benefits-wrapper {
+        padding: 0 30px;
+    }
+    
+    .company-wrapper {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    
+    .benefits-cards {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 35px;
+    }
+    
+    .features-layout {
+        grid-template-columns: 1fr 1fr;
+        gap: 35px;
+    }
+    
+    .mailing-wrapper {
+        grid-template-columns: 1fr;
+        padding: 0 30px;
+        gap: 25px;
+    }
+    
+    .mailing-text {
+        padding-left: 0;
+        text-align: center;
+    }
+    
+    .mailing-form {
+        order: 2;
+    }
+    
+    .mailing-action {
+        order: 3;
+        justify-content: center;
+    }
+}
